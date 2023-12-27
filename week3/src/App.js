@@ -32,9 +32,9 @@ function App() {
   },[blockNumber]);
 
 
-  const selectedData = (obj) => {
-    setData(obj);
-  }
+  // const selectedData = (obj) => {
+  //   setData(obj);
+  // }
 
   return (
     <div style={{display:"flex"}}>
@@ -43,7 +43,7 @@ function App() {
         <ul>
           {transactData &&
             transactData.transactions.map((data) => (
-              <li key={data.chainId} onClick={() => selectedData(data)} style={{padding:"1rem"}}>
+              <li key={data.chainId} onClick={() => setData(data)} style={{padding:"1rem"}}>
                 {data.blockHash}
               </li>
             ))}
