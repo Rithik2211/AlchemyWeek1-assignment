@@ -1,6 +1,5 @@
 import { Alchemy, Network } from 'alchemy-sdk';
 import { useEffect, useState } from 'react';
-
 import './App.css';
 
 const settings = {
@@ -30,11 +29,6 @@ function App() {
     }
     getTransaction()
   },[blockNumber]);
-
-
-  // const selectedData = (obj) => {
-  //   setData(obj);
-  // }
 
   return (
     <div style={{display:"flex"}}>
